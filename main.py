@@ -1,3 +1,4 @@
+from Vector import Vector2,Vector3
 
-if __name__ == "main":
-    print("TEST")
+v = Vector3(1, 2, 3)
+print(v)
