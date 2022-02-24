@@ -22,6 +22,7 @@ class ScaraUnitTest(unittest.TestCase):
         self.assertEqual(scara.look_at(Vector2(20, -20)), 135)
         self.assertEqual(scara.look_at(Vector2(-15, 0)), -90)
         self.assertEqual(scara.look_at(Vector2(-15, 15)), -45)
+        self.assertEqual(math.fabs(scara.look_at(Vector2(0, -15))), 180)
 
 
 if __name__ == '__main__':
