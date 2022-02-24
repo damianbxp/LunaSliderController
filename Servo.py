@@ -8,6 +8,7 @@ class Servo:
         self.pwm.freq(freq)
 
         self.max_angle = max_angle
+        # Duże (2200,7000)
         self.angle_pwm_range = angle_PWM_range
 
         self.current_angle = 0

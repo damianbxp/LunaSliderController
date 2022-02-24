@@ -9,8 +9,8 @@ class Scara:
         self.a1 = 100
         self.a2 = 100
 
-        self.servos = [Servo(0, 180, (1500, 8500)),
-                       Servo(1, 180, (1500, 8500)),
+        self.servos = [Servo(0, 180, (2200, 7000)),
+                       Servo(1, 180, (2200, 7000)),
                        Servo(2, 180, (1500, 8500)),
                        Servo(3, 180, (1500, 8500))]
 
