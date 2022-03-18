@@ -7,9 +7,9 @@ from Vector import Vector2
 class ScaraUnitTest(unittest.TestCase):
     def test_calc_IK(self):
         scara = Scara()
-        scara.a1 = 100
-        scara.a2 = 100
-        self.assertEqual(scara.calc_Scara_IK(Vector2(0, math.sqrt(2) * scara.a1)), {45, 90})
+        scara.arm1_len = 100
+        scara.arm2_len = 100
+        self.assertEqual(scara.calc_Scara_IK(Vector2(0, math.sqrt(2) * scara.arm1_len)), {45, 90})
         self.assertEqual(scara.calc_Scara_IK(Vector2(100, 100)), {0, 90})
         self.assertEqual(scara.calc_Scara_IK(Vector2(0, 100)), {30, 120})
 
