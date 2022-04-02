@@ -12,8 +12,8 @@ class Slider:
         self.endstop_pins = Slider_config.endstop_pins if endstop_pins is None else endstop_pins
 
         # stepper motor pins
-        self.motor_x = Slider_config.x_motor if motor_x_pin is None else motor_x_pin
-        self.motor_y = Slider_config.y_motor if motor_y_pin is None else motor_y_pin
+        self.motor_x = Slider_config.x_motor_step if motor_x_pin is None else motor_x_pin
+        self.motor_y = Slider_config.y_motor_step if motor_y_pin is None else motor_y_pin
 
     def move(self, new_pos: Vector2):
         print(f"Moving from {self.current_pos} to {new_pos}")

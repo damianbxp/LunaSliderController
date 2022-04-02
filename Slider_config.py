@@ -3,8 +3,11 @@ Slider
 """
 # pins
 
-x_motor = 0
-y_motor = 0
+step_pins = (17, 19)
+dir_pins = (16, 18)
+enable_pins = (20, 21)
+soft_stop_pin =
+move_diode_pin =
 endstop_pins = [0,0,0,0]
 
 

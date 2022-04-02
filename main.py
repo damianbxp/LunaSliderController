@@ -18,6 +18,3 @@ def loop():
 
 if __name__ == "main":
     setup()
-
-    while True:
-        loop()
